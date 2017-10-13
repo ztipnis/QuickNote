@@ -1,3 +1,0 @@
-framework module QNConnect {
-    header "QNConnect-Swift.h"
-}
