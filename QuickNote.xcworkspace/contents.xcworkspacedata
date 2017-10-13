@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:iOS/QuickNote/../YapDatabase/YapDatabase.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/zatipnis/Projects/iOS/QuickNote/QuickNote iOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:/Users/zatipnis/Projects/OSX/QuickNote/QuickNote macOS.xcodeproj">
+   </FileRef>
+</Workspace>

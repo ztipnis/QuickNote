@@ -1,0 +1,12 @@
+steps:
+  -
+    name: ":fastlane: Test Mac OS X"
+    command: .ci/scripts/test-osx
+    agents:
+      xcode: "$XCODE"
+  -
+    name: ":fastlane: Test iOS"
+    command: .ci/scripts/test-ios
+    agents:
+      xcode: "$XCODE"
+      queue: "iOS-Simulator"

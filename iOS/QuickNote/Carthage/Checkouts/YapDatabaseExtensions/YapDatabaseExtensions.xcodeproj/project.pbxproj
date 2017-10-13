@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		656BAE7B1D9A4CCC008279EE /* YapDatabaseExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656BAE701D9A4CCC008279EE /* YapDatabaseExtensions.framework */; };
+		65D2CBE91D9BF4A60088AB4F /* YapDatabaseExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D2CBE71D9BF4880088AB4F /* YapDatabaseExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65D2CC061D9BF4B50088AB4F /* Curried_ObjectWithNoMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBEB1D9BF4B50088AB4F /* Curried_ObjectWithNoMetadata.swift */; };
+		65D2CC071D9BF4B50088AB4F /* Curried_ObjectWithObjectMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBEC1D9BF4B50088AB4F /* Curried_ObjectWithObjectMetadata.swift */; };
+		65D2CC081D9BF4B50088AB4F /* Curried_ObjectWithValueMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBED1D9BF4B50088AB4F /* Curried_ObjectWithValueMetadata.swift */; };
+		65D2CC091D9BF4B50088AB4F /* Curried_ValueWithNoMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBEE1D9BF4B50088AB4F /* Curried_ValueWithNoMetadata.swift */; };
+		65D2CC0A1D9BF4B50088AB4F /* Curried_ValueWithObjectMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBEF1D9BF4B50088AB4F /* Curried_ValueWithObjectMetadata.swift */; };
+		65D2CC0B1D9BF4B50088AB4F /* Curried_ValueWithValueMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBF01D9BF4B50088AB4F /* Curried_ValueWithValueMetadata.swift */; };
+		65D2CC0C1D9BF4B50088AB4F /* Functional_AnyWithObjectMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBF11D9BF4B50088AB4F /* Functional_AnyWithObjectMetadata.swift */; };
+		65D2CC0D1D9BF4B50088AB4F /* Functional_AnyWithValueMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBF21D9BF4B50088AB4F /* Functional_AnyWithValueMetadata.swift */; };
+		65D2CC0E1D9BF4B50088AB4F /* Functional_ObjectWithNoMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBF31D9BF4B50088AB4F /* Functional_ObjectWithNoMetadata.swift */; };
+		65D2CC0F1D9BF4B50088AB4F /* Functional_ObjectWithObjectMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBF41D9BF4B50088AB4F /* Functional_ObjectWithObjectMetadata.swift */; };
+		65D2CC101D9BF4B50088AB4F /* Functional_ObjectWithValueMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBF51D9BF4B50088AB4F /* Functional_ObjectWithValueMetadata.swift */; };
+		65D2CC111D9BF4B50088AB4F /* Functional_Remove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBF61D9BF4B50088AB4F /* Functional_Remove.swift */; };
+		65D2CC121D9BF4B50088AB4F /* Functional_ValueWithNoMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBF71D9BF4B50088AB4F /* Functional_ValueWithNoMetadata.swift */; };
+		65D2CC131D9BF4B50088AB4F /* Functional_ValueWIthObjectMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBF81D9BF4B50088AB4F /* Functional_ValueWIthObjectMetadata.swift */; };
+		65D2CC141D9BF4B50088AB4F /* Functional_ValueWIthValueMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBF91D9BF4B50088AB4F /* Functional_ValueWIthValueMetadata.swift */; };
+		65D2CC151D9BF4B50088AB4F /* Persistable_AnyWithObjectMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBFA1D9BF4B50088AB4F /* Persistable_AnyWithObjectMetadata.swift */; };
+		65D2CC161D9BF4B50088AB4F /* Persistable_AnyWithValueMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBFB1D9BF4B50088AB4F /* Persistable_AnyWithValueMetadata.swift */; };
+		65D2CC171D9BF4B50088AB4F /* Persistable_ObjectWithNoMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBFC1D9BF4B50088AB4F /* Persistable_ObjectWithNoMetadata.swift */; };
+		65D2CC181D9BF4B50088AB4F /* Persistable_ObjectWithObjectMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBFD1D9BF4B50088AB4F /* Persistable_ObjectWithObjectMetadata.swift */; };
+		65D2CC191D9BF4B50088AB4F /* Persistable_ObjectWithValueMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBFE1D9BF4B50088AB4F /* Persistable_ObjectWithValueMetadata.swift */; };
+		65D2CC1A1D9BF4B50088AB4F /* Persistable_Remove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CBFF1D9BF4B50088AB4F /* Persistable_Remove.swift */; };
+		65D2CC1B1D9BF4B50088AB4F /* Persistable_ValueWithNoMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CC001D9BF4B50088AB4F /* Persistable_ValueWithNoMetadata.swift */; };
+		65D2CC1C1D9BF4B50088AB4F /* Persistable_ValueWithObjectMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CC011D9BF4B50088AB4F /* Persistable_ValueWithObjectMetadata.swift */; };
+		65D2CC1D1D9BF4B50088AB4F /* Persistable_ValueWithValueMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CC021D9BF4B50088AB4F /* Persistable_ValueWithValueMetadata.swift */; };
+		65D2CC1E1D9BF4B50088AB4F /* Read.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CC031D9BF4B50088AB4F /* Read.swift */; };
+		65D2CC1F1D9BF4B50088AB4F /* YapDatabaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CC041D9BF4B50088AB4F /* YapDatabaseExtensions.swift */; };
+		65D2CC201D9BF4B50088AB4F /* YapDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2CC051D9BF4B50088AB4F /* YapDB.swift */; };
+		65E6DB791DA155700037A1AA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6DB6E1DA155700037A1AA /* Models.swift */; };
+		65E6DB7A1DA155700037A1AA /* ObjectWithNoMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6DB6F1DA155700037A1AA /* ObjectWithNoMetadataTests.swift */; };
+		65E6DB7B1DA155700037A1AA /* ObjectWithObjectMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6DB701DA155700037A1AA /* ObjectWithObjectMetadataTests.swift */; };
+		65E6DB7C1DA155700037A1AA /* ObjectWithValueMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6DB711DA155700037A1AA /* ObjectWithValueMetadataTests.swift */; };
+		65E6DB7D1DA155700037A1AA /* ReadWriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6DB721DA155700037A1AA /* ReadWriteTests.swift */; };
+		65E6DB7E1DA155700037A1AA /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6DB731DA155700037A1AA /* Support.swift */; };
+		65E6DB7F1DA155700037A1AA /* ValueWithNoMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6DB741DA155700037A1AA /* ValueWithNoMetadataTests.swift */; };
+		65E6DB801DA155700037A1AA /* ValueWithObjectMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6DB751DA155700037A1AA /* ValueWithObjectMetadataTests.swift */; };
+		65E6DB811DA155700037A1AA /* ValueWithValueMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6DB761DA155700037A1AA /* ValueWithValueMetadataTests.swift */; };
+		65E6DB821DA155700037A1AA /* YapDatabaseExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6DB771DA155700037A1AA /* YapDatabaseExtensionsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		656BAE7C1D9A4CCC008279EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 656BAE651D9A4CA8008279EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 656BAE6F1D9A4CCC008279EE;
+			remoteInfo = YapDatabaseExtensions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		656BAE701D9A4CCC008279EE /* YapDatabaseExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YapDatabaseExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		656BAE7A1D9A4CCC008279EE /* YapDatabaseExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YapDatabaseExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D2CBE41D9BF4880088AB4F /* Carthage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Carthage.xcconfig; sourceTree = "<group>"; };
+		65D2CBE51D9BF4880088AB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65D2CBE61D9BF4880088AB4F /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
+		65D2CBE71D9BF4880088AB4F /* YapDatabaseExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YapDatabaseExtensions.h; sourceTree = "<group>"; };
+		65D2CBE81D9BF4880088AB4F /* YapDatabaseExtensions.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = YapDatabaseExtensions.xcconfig; sourceTree = "<group>"; };
+		65D2CBEB1D9BF4B50088AB4F /* Curried_ObjectWithNoMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curried_ObjectWithNoMetadata.swift; sourceTree = "<group>"; };
+		65D2CBEC1D9BF4B50088AB4F /* Curried_ObjectWithObjectMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curried_ObjectWithObjectMetadata.swift; sourceTree = "<group>"; };
+		65D2CBED1D9BF4B50088AB4F /* Curried_ObjectWithValueMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curried_ObjectWithValueMetadata.swift; sourceTree = "<group>"; };
+		65D2CBEE1D9BF4B50088AB4F /* Curried_ValueWithNoMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curried_ValueWithNoMetadata.swift; sourceTree = "<group>"; };
+		65D2CBEF1D9BF4B50088AB4F /* Curried_ValueWithObjectMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curried_ValueWithObjectMetadata.swift; sourceTree = "<group>"; };
+		65D2CBF01D9BF4B50088AB4F /* Curried_ValueWithValueMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curried_ValueWithValueMetadata.swift; sourceTree = "<group>"; };
+		65D2CBF11D9BF4B50088AB4F /* Functional_AnyWithObjectMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functional_AnyWithObjectMetadata.swift; sourceTree = "<group>"; };
+		65D2CBF21D9BF4B50088AB4F /* Functional_AnyWithValueMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functional_AnyWithValueMetadata.swift; sourceTree = "<group>"; };
+		65D2CBF31D9BF4B50088AB4F /* Functional_ObjectWithNoMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functional_ObjectWithNoMetadata.swift; sourceTree = "<group>"; };
+		65D2CBF41D9BF4B50088AB4F /* Functional_ObjectWithObjectMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functional_ObjectWithObjectMetadata.swift; sourceTree = "<group>"; };
+		65D2CBF51D9BF4B50088AB4F /* Functional_ObjectWithValueMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functional_ObjectWithValueMetadata.swift; sourceTree = "<group>"; };
+		65D2CBF61D9BF4B50088AB4F /* Functional_Remove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functional_Remove.swift; sourceTree = "<group>"; };
+		65D2CBF71D9BF4B50088AB4F /* Functional_ValueWithNoMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functional_ValueWithNoMetadata.swift; sourceTree = "<group>"; };
+		65D2CBF81D9BF4B50088AB4F /* Functional_ValueWIthObjectMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functional_ValueWIthObjectMetadata.swift; sourceTree = "<group>"; };
+		65D2CBF91D9BF4B50088AB4F /* Functional_ValueWIthValueMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functional_ValueWIthValueMetadata.swift; sourceTree = "<group>"; };
+		65D2CBFA1D9BF4B50088AB4F /* Persistable_AnyWithObjectMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistable_AnyWithObjectMetadata.swift; sourceTree = "<group>"; };
+		65D2CBFB1D9BF4B50088AB4F /* Persistable_AnyWithValueMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistable_AnyWithValueMetadata.swift; sourceTree = "<group>"; };
+		65D2CBFC1D9BF4B50088AB4F /* Persistable_ObjectWithNoMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistable_ObjectWithNoMetadata.swift; sourceTree = "<group>"; };
+		65D2CBFD1D9BF4B50088AB4F /* Persistable_ObjectWithObjectMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistable_ObjectWithObjectMetadata.swift; sourceTree = "<group>"; };
+		65D2CBFE1D9BF4B50088AB4F /* Persistable_ObjectWithValueMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistable_ObjectWithValueMetadata.swift; sourceTree = "<group>"; };
+		65D2CBFF1D9BF4B50088AB4F /* Persistable_Remove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistable_Remove.swift; sourceTree = "<group>"; };
+		65D2CC001D9BF4B50088AB4F /* Persistable_ValueWithNoMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistable_ValueWithNoMetadata.swift; sourceTree = "<group>"; };
+		65D2CC011D9BF4B50088AB4F /* Persistable_ValueWithObjectMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistable_ValueWithObjectMetadata.swift; sourceTree = "<group>"; };
+		65D2CC021D9BF4B50088AB4F /* Persistable_ValueWithValueMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistable_ValueWithValueMetadata.swift; sourceTree = "<group>"; };
+		65D2CC031D9BF4B50088AB4F /* Read.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Read.swift; sourceTree = "<group>"; };
+		65D2CC041D9BF4B50088AB4F /* YapDatabaseExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YapDatabaseExtensions.swift; sourceTree = "<group>"; };
+		65D2CC051D9BF4B50088AB4F /* YapDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YapDB.swift; sourceTree = "<group>"; };
+		65E6DB6D1DA155700037A1AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E6DB6E1DA155700037A1AA /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		65E6DB6F1DA155700037A1AA /* ObjectWithNoMetadataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectWithNoMetadataTests.swift; sourceTree = "<group>"; };
+		65E6DB701DA155700037A1AA /* ObjectWithObjectMetadataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectWithObjectMetadataTests.swift; sourceTree = "<group>"; };
+		65E6DB711DA155700037A1AA /* ObjectWithValueMetadataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectWithValueMetadataTests.swift; sourceTree = "<group>"; };
+		65E6DB721DA155700037A1AA /* ReadWriteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadWriteTests.swift; sourceTree = "<group>"; };
+		65E6DB731DA155700037A1AA /* Support.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		65E6DB741DA155700037A1AA /* ValueWithNoMetadataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueWithNoMetadataTests.swift; sourceTree = "<group>"; };
+		65E6DB751DA155700037A1AA /* ValueWithObjectMetadataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueWithObjectMetadataTests.swift; sourceTree = "<group>"; };
+		65E6DB761DA155700037A1AA /* ValueWithValueMetadataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueWithValueMetadataTests.swift; sourceTree = "<group>"; };
+		65E6DB771DA155700037A1AA /* YapDatabaseExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YapDatabaseExtensionsTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		656BAE6C1D9A4CCC008279EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656BAE771D9A4CCC008279EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656BAE7B1D9A4CCC008279EE /* YapDatabaseExtensions.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		656BAE641D9A4CA8008279EE = {
+			isa = PBXGroup;
+			children = (
+				65D2CBEA1D9BF4B50088AB4F /* Sources */,
+				65E6DB6C1DA155700037A1AA /* Tests */,
+				65D2CBE31D9BF4880088AB4F /* Supporting Files */,
+				656BAE711D9A4CCC008279EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		656BAE711D9A4CCC008279EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				656BAE701D9A4CCC008279EE /* YapDatabaseExtensions.framework */,
+				656BAE7A1D9A4CCC008279EE /* YapDatabaseExtensionsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65D2CBE31D9BF4880088AB4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65D2CBE41D9BF4880088AB4F /* Carthage.xcconfig */,
+				65D2CBE51D9BF4880088AB4F /* Info.plist */,
+				65D2CBE61D9BF4880088AB4F /* Version.xcconfig */,
+				65D2CBE71D9BF4880088AB4F /* YapDatabaseExtensions.h */,
+				65D2CBE81D9BF4880088AB4F /* YapDatabaseExtensions.xcconfig */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65D2CBEA1D9BF4B50088AB4F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				65D2CBEB1D9BF4B50088AB4F /* Curried_ObjectWithNoMetadata.swift */,
+				65D2CBEC1D9BF4B50088AB4F /* Curried_ObjectWithObjectMetadata.swift */,
+				65D2CBED1D9BF4B50088AB4F /* Curried_ObjectWithValueMetadata.swift */,
+				65D2CBEE1D9BF4B50088AB4F /* Curried_ValueWithNoMetadata.swift */,
+				65D2CBEF1D9BF4B50088AB4F /* Curried_ValueWithObjectMetadata.swift */,
+				65D2CBF01D9BF4B50088AB4F /* Curried_ValueWithValueMetadata.swift */,
+				65D2CBF11D9BF4B50088AB4F /* Functional_AnyWithObjectMetadata.swift */,
+				65D2CBF21D9BF4B50088AB4F /* Functional_AnyWithValueMetadata.swift */,
+				65D2CBF31D9BF4B50088AB4F /* Functional_ObjectWithNoMetadata.swift */,
+				65D2CBF41D9BF4B50088AB4F /* Functional_ObjectWithObjectMetadata.swift */,
+				65D2CBF51D9BF4B50088AB4F /* Functional_ObjectWithValueMetadata.swift */,
+				65D2CBF61D9BF4B50088AB4F /* Functional_Remove.swift */,
+				65D2CBF71D9BF4B50088AB4F /* Functional_ValueWithNoMetadata.swift */,
+				65D2CBF81D9BF4B50088AB4F /* Functional_ValueWIthObjectMetadata.swift */,
+				65D2CBF91D9BF4B50088AB4F /* Functional_ValueWIthValueMetadata.swift */,
+				65D2CBFA1D9BF4B50088AB4F /* Persistable_AnyWithObjectMetadata.swift */,
+				65D2CBFB1D9BF4B50088AB4F /* Persistable_AnyWithValueMetadata.swift */,
+				65D2CBFC1D9BF4B50088AB4F /* Persistable_ObjectWithNoMetadata.swift */,
+				65D2CBFD1D9BF4B50088AB4F /* Persistable_ObjectWithObjectMetadata.swift */,
+				65D2CBFE1D9BF4B50088AB4F /* Persistable_ObjectWithValueMetadata.swift */,
+				65D2CBFF1D9BF4B50088AB4F /* Persistable_Remove.swift */,
+				65D2CC001D9BF4B50088AB4F /* Persistable_ValueWithNoMetadata.swift */,
+				65D2CC011D9BF4B50088AB4F /* Persistable_ValueWithObjectMetadata.swift */,
+				65D2CC021D9BF4B50088AB4F /* Persistable_ValueWithValueMetadata.swift */,
+				65D2CC031D9BF4B50088AB4F /* Read.swift */,
+				65D2CC041D9BF4B50088AB4F /* YapDatabaseExtensions.swift */,
+				65D2CC051D9BF4B50088AB4F /* YapDB.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		65E6DB6C1DA155700037A1AA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				65E6DB6D1DA155700037A1AA /* Info.plist */,
+				65E6DB6E1DA155700037A1AA /* Models.swift */,
+				65E6DB6F1DA155700037A1AA /* ObjectWithNoMetadataTests.swift */,
+				65E6DB701DA155700037A1AA /* ObjectWithObjectMetadataTests.swift */,
+				65E6DB711DA155700037A1AA /* ObjectWithValueMetadataTests.swift */,
+				65E6DB721DA155700037A1AA /* ReadWriteTests.swift */,
+				65E6DB731DA155700037A1AA /* Support.swift */,
+				65E6DB741DA155700037A1AA /* ValueWithNoMetadataTests.swift */,
+				65E6DB751DA155700037A1AA /* ValueWithObjectMetadataTests.swift */,
+				65E6DB761DA155700037A1AA /* ValueWithValueMetadataTests.swift */,
+				65E6DB771DA155700037A1AA /* YapDatabaseExtensionsTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		656BAE6D1D9A4CCC008279EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D2CBE91D9BF4A60088AB4F /* YapDatabaseExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		656BAE6F1D9A4CCC008279EE /* YapDatabaseExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 656BAE821D9A4CCC008279EE /* Build configuration list for PBXNativeTarget "YapDatabaseExtensions" */;
+			buildPhases = (
+				656BAE6B1D9A4CCC008279EE /* Sources */,
+				656BAE6C1D9A4CCC008279EE /* Frameworks */,
+				656BAE6D1D9A4CCC008279EE /* Headers */,
+				656BAE6E1D9A4CCC008279EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YapDatabaseExtensions;
+			productName = YapDatabaseExtensions;
+			productReference = 656BAE701D9A4CCC008279EE /* YapDatabaseExtensions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		656BAE791D9A4CCC008279EE /* YapDatabaseExtensionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 656BAE851D9A4CCC008279EE /* Build configuration list for PBXNativeTarget "YapDatabaseExtensionsTests" */;
+			buildPhases = (
+				656BAE761D9A4CCC008279EE /* Sources */,
+				656BAE771D9A4CCC008279EE /* Frameworks */,
+				656BAE781D9A4CCC008279EE /* Resources */,
+				65E6DB831DA155EE0037A1AA /* Copy Carthage Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				656BAE7D1D9A4CCC008279EE /* PBXTargetDependency */,
+			);
+			name = YapDatabaseExtensionsTests;
+			productName = YapDatabaseExtensionsTests;
+			productReference = 656BAE7A1D9A4CCC008279EE /* YapDatabaseExtensionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		656BAE651D9A4CA8008279EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0810;
+				TargetAttributes = {
+					656BAE6F1D9A4CCC008279EE = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+					};
+					656BAE791D9A4CCC008279EE = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 656BAE681D9A4CA8008279EE /* Build configuration list for PBXProject "YapDatabaseExtensions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 656BAE641D9A4CA8008279EE;
+			productRefGroup = 656BAE711D9A4CCC008279EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				656BAE6F1D9A4CCC008279EE /* YapDatabaseExtensions */,
+				656BAE791D9A4CCC008279EE /* YapDatabaseExtensionsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		656BAE6E1D9A4CCC008279EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656BAE781D9A4CCC008279EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65E6DB831DA155EE0037A1AA /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				ValueCoding,
+				YapDatabase,
+				CocoaLumberjack,
+				Reachability,
+			);
+			name = "Copy Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "case \"$PLATFORM_NAME\" in\nmacosx) plat=Mac;;\niphone*) plat=iOS;;\nwatch*) plat=watchOS;;\ntv*) plat=tvOS;;\n*) echo \"error: Unknown PLATFORM_NAME: $PLATFORM_NAME\"; exit 1;;\nesac\nfor (( n = 0; n < SCRIPT_INPUT_FILE_COUNT; n++ )); do\nVAR=SCRIPT_INPUT_FILE_$n\nframework=$(basename \"${!VAR}\")\nexport SCRIPT_INPUT_FILE_$n=\"$SRCROOT\"/Carthage/Build/$plat/\"$framework\".framework\ndone\n\n/usr/local/bin/carthage copy-frameworks || exit\n\nfor (( n = 0; n < SCRIPT_INPUT_FILE_COUNT; n++ )); do\nVAR=SCRIPT_INPUT_FILE_$n\nsource=${!VAR}.dSYM\ndest=${BUILT_PRODUCTS_DIR}/$(basename \"$source\")\nditto \"$source\" \"$dest\" || exit\ndone";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		656BAE6B1D9A4CCC008279EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D2CC0A1D9BF4B50088AB4F /* Curried_ValueWithObjectMetadata.swift in Sources */,
+				65D2CC0B1D9BF4B50088AB4F /* Curried_ValueWithValueMetadata.swift in Sources */,
+				65D2CC111D9BF4B50088AB4F /* Functional_Remove.swift in Sources */,
+				65D2CC0E1D9BF4B50088AB4F /* Functional_ObjectWithNoMetadata.swift in Sources */,
+				65D2CC091D9BF4B50088AB4F /* Curried_ValueWithNoMetadata.swift in Sources */,
+				65D2CC0C1D9BF4B50088AB4F /* Functional_AnyWithObjectMetadata.swift in Sources */,
+				65D2CC0D1D9BF4B50088AB4F /* Functional_AnyWithValueMetadata.swift in Sources */,
+				65D2CC1F1D9BF4B50088AB4F /* YapDatabaseExtensions.swift in Sources */,
+				65D2CC171D9BF4B50088AB4F /* Persistable_ObjectWithNoMetadata.swift in Sources */,
+				65D2CC181D9BF4B50088AB4F /* Persistable_ObjectWithObjectMetadata.swift in Sources */,
+				65D2CC1C1D9BF4B50088AB4F /* Persistable_ValueWithObjectMetadata.swift in Sources */,
+				65D2CC081D9BF4B50088AB4F /* Curried_ObjectWithValueMetadata.swift in Sources */,
+				65D2CC061D9BF4B50088AB4F /* Curried_ObjectWithNoMetadata.swift in Sources */,
+				65D2CC071D9BF4B50088AB4F /* Curried_ObjectWithObjectMetadata.swift in Sources */,
+				65D2CC1B1D9BF4B50088AB4F /* Persistable_ValueWithNoMetadata.swift in Sources */,
+				65D2CC131D9BF4B50088AB4F /* Functional_ValueWIthObjectMetadata.swift in Sources */,
+				65D2CC1D1D9BF4B50088AB4F /* Persistable_ValueWithValueMetadata.swift in Sources */,
+				65D2CC151D9BF4B50088AB4F /* Persistable_AnyWithObjectMetadata.swift in Sources */,
+				65D2CC1A1D9BF4B50088AB4F /* Persistable_Remove.swift in Sources */,
+				65D2CC121D9BF4B50088AB4F /* Functional_ValueWithNoMetadata.swift in Sources */,
+				65D2CC101D9BF4B50088AB4F /* Functional_ObjectWithValueMetadata.swift in Sources */,
+				65D2CC201D9BF4B50088AB4F /* YapDB.swift in Sources */,
+				65D2CC141D9BF4B50088AB4F /* Functional_ValueWIthValueMetadata.swift in Sources */,
+				65D2CC161D9BF4B50088AB4F /* Persistable_AnyWithValueMetadata.swift in Sources */,
+				65D2CC191D9BF4B50088AB4F /* Persistable_ObjectWithValueMetadata.swift in Sources */,
+				65D2CC1E1D9BF4B50088AB4F /* Read.swift in Sources */,
+				65D2CC0F1D9BF4B50088AB4F /* Functional_ObjectWithObjectMetadata.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656BAE761D9A4CCC008279EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E6DB7B1DA155700037A1AA /* ObjectWithObjectMetadataTests.swift in Sources */,
+				65E6DB7C1DA155700037A1AA /* ObjectWithValueMetadataTests.swift in Sources */,
+				65E6DB7A1DA155700037A1AA /* ObjectWithNoMetadataTests.swift in Sources */,
+				65E6DB7D1DA155700037A1AA /* ReadWriteTests.swift in Sources */,
+				65E6DB791DA155700037A1AA /* Models.swift in Sources */,
+				65E6DB801DA155700037A1AA /* ValueWithObjectMetadataTests.swift in Sources */,
+				65E6DB811DA155700037A1AA /* ValueWithValueMetadataTests.swift in Sources */,
+				65E6DB7F1DA155700037A1AA /* ValueWithNoMetadataTests.swift in Sources */,
+				65E6DB821DA155700037A1AA /* YapDatabaseExtensionsTests.swift in Sources */,
+				65E6DB7E1DA155700037A1AA /* Support.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		656BAE7D1D9A4CCC008279EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 656BAE6F1D9A4CCC008279EE /* YapDatabaseExtensions */;
+			targetProxy = 656BAE7C1D9A4CCC008279EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		656BAE691D9A4CA8008279EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D2CBE81D9BF4880088AB4F /* YapDatabaseExtensions.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		656BAE6A1D9A4CA8008279EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D2CBE81D9BF4880088AB4F /* YapDatabaseExtensions.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		656BAE831D9A4CCC008279EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		656BAE841D9A4CCC008279EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		656BAE861D9A4CCC008279EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		656BAE871D9A4CCC008279EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		656BAE681D9A4CA8008279EE /* Build configuration list for PBXProject "YapDatabaseExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656BAE691D9A4CA8008279EE /* Debug */,
+				656BAE6A1D9A4CA8008279EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		656BAE821D9A4CCC008279EE /* Build configuration list for PBXNativeTarget "YapDatabaseExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656BAE831D9A4CCC008279EE /* Debug */,
+				656BAE841D9A4CCC008279EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		656BAE851D9A4CCC008279EE /* Build configuration list for PBXNativeTarget "YapDatabaseExtensionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656BAE861D9A4CCC008279EE /* Debug */,
+				656BAE871D9A4CCC008279EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 656BAE651D9A4CA8008279EE /* Project object */;
+}

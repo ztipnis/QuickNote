@@ -1,0 +1,10 @@
+framework module slideOutMenu {
+  umbrella header "slideOutMenu.h"
+
+  export *
+  module * { export * }
+}
+
+module slideOutMenu.Swift {
+    header "slideOutMenu-Swift.h"
+}
